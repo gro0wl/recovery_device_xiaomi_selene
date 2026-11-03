@@ -3,6 +3,9 @@ TWRP Device Tree for Redmi 10 (selene) MIUI 12.5
 
 The Redmi 10 is a budget range smartphone from Redmi, Released 2021, August 20
 
+The `ofox-growl-r-vendor` branch packages GROWL Kernel 2.0 (`85113133`) as the
+recovery kernel. This combination has not yet been validated on device hardware.
+
 ## Device specifications
 
 Basic   | Spec Sheet
