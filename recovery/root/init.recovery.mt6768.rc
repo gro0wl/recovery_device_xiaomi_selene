@@ -58,7 +58,7 @@ on property:vendor.sys.listener.registered=true
     start gatekeeper-1-0
 
 on property:hwservicemanager.ready=true
-    start keymaster-4-0
+    # Keymaster intentionally not started in the no-crypto diagnostic build.
     start gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
