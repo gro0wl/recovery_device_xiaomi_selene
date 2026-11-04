@@ -1,5 +1,8 @@
 import /init.microtrust.rc
 
+on post-fs
+    start ofox-log-capture
+
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
 
@@ -76,3 +79,11 @@ on property:twrp.all.users.decrypted=true
 on boot
     start boot-hal-1-1
     start health-hal-2-1
+
+service ofox-log-capture /system/bin/sh /system/bin/ofox-log-capture.sh
+    class core
+    user root
+    group root system log
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
