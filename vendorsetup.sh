@@ -20,7 +20,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
   echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for selene...\x1b[m"
   if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # Version / Maintainer infos
-    export OF_MAINTAINER="Hasan6034"
+    export OF_MAINTAINER="@lyvex0"
     export FOX_VANILLA_BUILD=1
     export FOX_BUILD_TYPE="Unofficial"
 
