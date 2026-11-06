@@ -47,7 +47,6 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 BOARD_KERNEL_CMDLINE := \
 	bootopt=64S3,32N2,64N2 \
-	androidboot.force_normal_boot=1 \
 	loop.max_part=7 \
 	androidboot.init_fatal_reboot_target=recovery
 
